@@ -10,19 +10,6 @@ trainingData = [[4,1],
  [4,-1], 
  [0,0], 
  [6,1]]
-count = 0
-total = 0
-for item in trainingData:
-  if item[1] == 1:
-    total += item[0]
-    count += 1
-
-if count == 0:
-  print("0.0")
-else:
-  print(total/count)
-
-#%%
 
 def companyBotStrategy(trainingData):
     count = 0
@@ -33,6 +20,11 @@ def companyBotStrategy(trainingData):
             count += 1
 
     if count == 0:
-        print("0.0")
+        return 0
     else:
-        print(total/count)
+        return total/count
+
+companyBotStrategy(trainingData)
+
+#%%
+
