@@ -11,8 +11,6 @@ centuryFromYear(year) = 17.
 
 year = 1700;
 
-function centuryFromYear(year) {
-  return Math.floor(year / 100) + (year % 100 > 0) * 1;
-}
+const centuryFromYear = year => Math.floor(year / 100) + (year % 100 > 0) * 1;
 
 console.log(centuryFromYear(year));
